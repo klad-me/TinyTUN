@@ -20,6 +20,10 @@ Available options
 ```
 It returns network interface name to stdout (or nothing if it's just route server).
 
+One server can handle unlimited clients. Server use MAC-tables routing (like your home router/switch does).
+So all you need is to assign different IP addresses to clients. MAC is set
+by tun/tap driver.
+
 
 # Server
 Server can run in 2 modes:
